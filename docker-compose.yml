@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./docker/app/Dockerfile
+    volumes:
+      - ./react0:/var/www/react0:delegated
+      - node_modules:/var/www/react0/app/node_modules
+    working_dir:
+      /var/www/react0/app
+    command: npm start
+    ports:
+      - "3000:3000"
+
+volumes:
+  node_modules:
