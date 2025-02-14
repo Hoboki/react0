@@ -1,4 +1,4 @@
-# React starter
+# React0: Minimum requirements for react app
 
 How to login container
 
